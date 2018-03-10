@@ -14,12 +14,12 @@ public void test1(){
 	RequestSpecification request=RestAssured.given();
 
 request.head("Content-Type", "application/json");
-JSONObject json=new JSONObject();
-json.put("", "");
+JSONObject json1=new JSONObject();
+json1.put("", "");
 
-json.put("", "");
-json.put("", "");
-request.body(json.toJSONString());
+json1.put("", "");
+json1.put("", "");
+request.body(json1.toJSONString());
 Response response=request.post("url ");
 int code=response.getStatusCode();
 
